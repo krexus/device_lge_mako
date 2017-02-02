@@ -28,6 +28,12 @@ DEVICE_PACKAGE_OVERLAYS := device/lge/mako/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Inline kernel building
+TARGET_KERNEL_SOURCE := kernel/lge/mako
+TARGET_KERNEL_CONFIG := mako_defconfig
+TARGET_VARIANT_CONFIG := mako_defconfig
+TARGET_SELINUX_CONFIG := mako_defconfig
+
 PRODUCT_PACKAGES := \
     libwpa_client \
     hostapd \
